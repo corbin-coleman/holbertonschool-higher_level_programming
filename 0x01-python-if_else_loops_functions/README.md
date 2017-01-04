@@ -14,7 +14,7 @@ This is a Holberton School project. The project focuses on the use of if/else st
 - <b>3-print_alphabt.py</b>: Use a for loop to print out the alphabet one one line, without q and e
 - <b>4-print_hexa.py</b>: Print out numbers 0 - 98 in decimal, and then in hexadecimal
 - <b>5-print_comb2.py</b>: Print out 0 - 99, with all numbers as 2 digits (1 is 01), seperated by a comma and a space, ending in a new line after 99
-- <b>6-print_comb3.py</b>: Print out the lowest unique 2 digit combinations of digits 0-9, ex: 01 and 10 are the samething
+- <b>6-print_comb3.py</b>: Print out the lowest unique 2 digit combinations of digits 0-9, ex: 01 and 10 are the same
 - <b>7-islower.py</b>: A function that finds if a given character is lowercase
 - <b>8-uppercase.py</b>: A function that changes all lowercase letters in a string to uppercase
 - <b>9-print_last_digit.py</b>: A function that prints the value of the last digit of a number, the return value is the value of the last digit
