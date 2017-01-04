@@ -1,5 +1,6 @@
 # 0x01 Python - if/else, loops, functions
 This is a Holberton School project. The project focuses on the use of if/else statements, loops, and functions in Python.
+
 ###Files & Contents
 - 0-positive_or_negative.py: Check the signage of a randomly generated number and print out a statement based on sign
 - 1-last_digit.py: Find the last digit of a number, output statment based on the digit's value
@@ -17,5 +18,6 @@ This is a Holberton School project. The project focuses on the use of if/else st
 - 7-islower.py: A function that finds if a given character is lowercase
 - 8-uppercase.py: A function that changes all lowercase letters in a string to uppercase
 - 9-print_last_digit.py: A function that prints the value of the last digit of a number, the return value is the value of the last digit
+
 ##Author
 Corbin Coleman
