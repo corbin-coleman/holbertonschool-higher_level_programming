@@ -16,6 +16,6 @@ if __name__ == "__main__":
     elif argv[2] == '/':
         val = div(a, b)
     else:
-        print("Unknown operator. Only: +, -, *, and / available")
+        print("Unknown operator. Only: +, -, * and / available")
         exit(1)
     print("{:d} {} {:d} = {:d}".format(a, argv[2], b, val))
