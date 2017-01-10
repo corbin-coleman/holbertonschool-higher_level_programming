@@ -1,0 +1,2 @@
+#0x03 Python - Data Structures: Lists, Tuples
+This is a project for Holberton School. The goal of the project is to have a better understanding of data structures in Python. All the files in this project show different ways of handling lists and tuples specifically.
