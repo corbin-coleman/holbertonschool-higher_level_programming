@@ -1,0 +1,54 @@
+The ``Multiplication`` module
+=============================
+
+Using ``mul``
+-------------
+
+This is a test file for the function ``mul``. First import ``mul`` from ``Multiplication`` module
+
+     >>> mul = __import__('1-mul').mul
+
+Now use it:
+
+    >>> mul(3, 3)
+    9
+
+    >>> mul("bob", 3)
+    'bobbobbob'
+
+    >>> mul('j', 'j')
+    Traceback (most recent call last):
+    ...
+    TypeError: can't multiply sequence by non-int of type 'str'
+
+    >>> mul(88.9, 2)
+    177.8
+
+    >>> mul([1, 2, 3], 3)
+    [1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+    >>> mul([1], [1])
+    Traceback (most recent call last):
+    ...
+    TypeError: can't multiply sequence by non-int of type 'list'
+
+    >>> mul({'hello': 77}, 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: unsupported operand type(s) for *: 'dict' and 'int'
+
+    >>> mul(2, None)
+    Traceback (most recent call last):
+    ...
+    TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
+
+    >>> mul(2, [1, 2])
+    [1, 2, 1, 2]
+
+    >>> mul(2, (3, 3))
+    (3, 3, 3, 3)
+
+    >>> mul(4, {4, 5, 6})
+    Traceback (most recent call last):
+    ...
+    TypeError: unsupported operand type(s) for *: 'int' and 'set'
