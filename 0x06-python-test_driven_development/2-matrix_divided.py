@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    if type(matrix) != list:
+    if type(matrix) != list or not matrix:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for i in matrix:
         quotients = []
