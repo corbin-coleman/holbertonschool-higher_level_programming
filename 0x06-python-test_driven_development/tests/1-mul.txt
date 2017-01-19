@@ -10,8 +10,20 @@ This is a test file for the function ``mul``. First import ``mul`` from ``Multip
 
 Now use it:
 
-    >>> mul(3, 3)
-    9
+    >>> mul(2, 3)
+    6
+
+    >>> mul(6, 2)
+    12
+
+    >>> mul(-6, 2)
+    -12
+
+    >>> mul(6, -2)
+    -12
+
+    >>> mul(-6, -2)
+    12
 
     >>> mul("bob", 3)
     'bobbobbob'
@@ -24,8 +36,14 @@ Now use it:
     >>> mul(88.9, 2)
     177.8
 
+    >>> mul(22, 2.2)
+    48.400000000000006
+
     >>> mul([1, 2, 3], 3)
     [1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+    >>> mul(3, [1, 2])
+    [1, 2, 1, 2, 1, 2]
 
     >>> mul([1], [1])
     Traceback (most recent call last):
@@ -42,13 +60,75 @@ Now use it:
     ...
     TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
 
-    >>> mul(2, [1, 2])
-    [1, 2, 1, 2]
-
     >>> mul(2, (3, 3))
     (3, 3, 3, 3)
+
+    >>> mul((2, 3), 2)
+    (2, 3, 2, 3)
 
     >>> mul(4, {4, 5, 6})
     Traceback (most recent call last):
     ...
     TypeError: unsupported operand type(s) for *: 'int' and 'set'
+
+    >>> mul(1e10000, 2)
+    inf
+
+    >>> mul(2, 1e10000)
+    inf
+
+    >>> mul(1e10000, 1e10000)
+    inf
+
+    >>> mul(1E+100, -3E+102)
+    -2.9999999999999997e+202
+
+    >>> mul(True, 5)
+    5
+
+    >>> mul(5, True)
+    5
+
+    >>> mul(False, 5)
+    0
+
+    >>> mul(5, False)
+    0
+
+    >>> mul(True, True)
+    1
+
+    >>> mul(True, False)
+    0
+
+    >>> mul(False, True)
+    0
+
+    >>> mul(False, False)
+    0
+
+    >>> mul(-2.45, 0)
+    -0.0
+
+    >>> mul("""Hello""", 3)
+    'HelloHelloHello'
+
+    >>> mul(4 + 4, 2)
+    16
+
+    >>> mul(4 / 4, 2)
+    2
+
+    >>> mul(4 - 4, 2)
+    0
+
+    >>> mul(4 * 4, 2)
+    32
+
+    >>> mul()
+    Traceback (most recent call last):
+    TypeError: mul() missing 2 required positional arguments: 'a' and 'b'
+
+    >>> mul(3)
+    Traceback (most recent call last):
+    TypeError: mul() missing 1 required positional argument: 'b'
