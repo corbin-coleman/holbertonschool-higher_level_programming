@@ -3,7 +3,8 @@
 """
 The ``Indentation`` module
 
-This module contains a function to print two new lines after thes characters: '?', '.', ':'
+This module contains a function to print two new lines after thes characters:
+'?', '.', ':'
 There should be no extra whitespace at the beginning or the end of the line
 """
 
