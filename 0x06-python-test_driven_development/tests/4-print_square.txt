@@ -33,7 +33,7 @@ Test cases
 
 	>>> print_square(-4)
 	Traceback (most recent call last):
-	ValueError: size msut be >= 0
+	ValueError: size must be >= 0
 
 	>>> print_square("joe")
 	Traceback (most recent call last):
@@ -70,3 +70,13 @@ Test cases
 	>>> print_square(float("inf"))
 	Traceback (most recent call last):
 	TypeError: size must be an integer
+
+	>>> print_square(True)
+	#
+
+	>>> print_square(False)
+	<BLANKLINE>
+
+	>>> print_square()
+	Traceback (most recent call last):
+	TypeError: print_square() missing 1 required positional argument: 'size'
