@@ -10,11 +10,8 @@ def say_my_name(first_name, last_name=""):
     """
     Return nothing
     """
-    if type(first_name) != str:
+    if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
-    if type(last_name) != str:
+    if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
-    try:
-        print("My name is {} {}".format(first_name, last_name))
-    except Exception as e:
-        print(e)
+    print("My name is {} {}".format(first_name, last_name))
