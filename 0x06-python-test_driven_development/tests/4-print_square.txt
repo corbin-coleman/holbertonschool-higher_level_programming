@@ -29,7 +29,6 @@ Test cases
 	##########
 
 	>>> print_square(0)
-	<BLANKLINE>
 
 	>>> print_square(-4)
 	Traceback (most recent call last):
@@ -75,7 +74,6 @@ Test cases
 	#
 
 	>>> print_square(False)
-	<BLANKLINE>
 
 	>>> print_square()
 	Traceback (most recent call last):
