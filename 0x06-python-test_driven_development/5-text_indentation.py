@@ -10,20 +10,11 @@ There should be no extra whitespace at the beginning or the end of the line
 
 
 def text_indentation(text):
-    if not isinstance(text, str):
+    """
+    Print out the given text before a '?', '.', or ':' character followed
+    by two new lines
+    """
+    if not text or not isinstance(text, str) or len(text) < 0:
         raise TypeError("text must be a string")
-    new_text = ""
-    for let in text:
-        i = 0
-        new_text += let
-        string_to_print = ""
-        if let in ['?', '.', ':']:
-            while new_text[i] == ' ':
-                i += 1
-            while i != len(new_text):
-                string_to_print += new_text[i]
-                if new_text[i] in ['?', '.', ':']:
-                    break
-                i += 1
-            print("{:s}\n".format(string_to_print))
-            new_text = ""
+    new = "".join([let if let not in "?.:" else let + "\n\n" for let in text])
+    print ("\n".join([words.strip() for words in new.split("\n")]), end="")

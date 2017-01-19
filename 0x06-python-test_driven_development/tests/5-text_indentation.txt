@@ -60,3 +60,14 @@ Test cases
 	>>> text_indentation(None)
 	Traceback (most recent call last):
 	TypeError: text must be a string
+
+	>>> text_indentation("\n?\n.")
+	<BLANKLINE>
+	?
+	<BLANKLINE>
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+
+	>>> text_indentation("HELLO THERE")
+	HELLO THERE
