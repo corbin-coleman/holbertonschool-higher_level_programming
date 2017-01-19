@@ -77,14 +77,13 @@ Test Cases
 	TypeError: b must be an integer
 
 	>>> add_integer(True, 22)
-	Traceback (most recent call last):
-	...
-	TypeError: a must be an integer
+	23
 
 	>>> add_integer(22, False)
-	Traceback (most recent call last):
-	...
-	TypeError: b must be an integer
+	22
+
+	>>> add_integer(True, False)
+	1
 
 	>>> add_integer(None, 2)
 	Traceback (most recent call last):
