@@ -5,6 +5,8 @@ This is the ``Matrix`` module
 Contains the function ``matrix_divided`` which divides a matrix of ints/floats
 by a given int
 """
+
+
 def matrix_divided(matrix, div):
     """
     Return a new_matrix of all items in matrix divided by div, all items in
@@ -12,19 +14,20 @@ def matrix_divided(matrix, div):
     """
     lengths = []
     new_matrix = []
-    if type(div) != int and type(div) != float:
+    type_error = "matrix must be a matrix (list of lists) of integers/floats"
+    if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    if type(matrix) != list or not matrix:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    if not isinstance(matrix, list) or not matrix:
+        raise TypeError(type_error)
     for i in matrix:
         quotients = []
-        if type(i) != list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        if not isinstance(i, list) or not i:
+            raise TypeError(type_error)
         for x in i:
-            if type(x) != int and type(x) != float:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            if not isinstance(x, int) and not isinstance(x, float):
+                raise TypeError(type_error)
             quotients.append(round(x / div, 2))
         length = len(i)
         if length not in lengths:
