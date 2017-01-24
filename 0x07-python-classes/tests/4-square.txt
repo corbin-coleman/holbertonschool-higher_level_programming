@@ -12,10 +12,6 @@ Import the ``Square`` class from the ``Square`` module
 Test it
 --------
 
-	>>> my_square = Square(True)
-	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
-	Area: 1 for size: True
-
 	>>> my_square = Square(89)
 	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 	Area: 7921 for size: 89
@@ -29,8 +25,12 @@ Test it
 	Area: 25 for size: 5
 
 	>>> my_square.size = True
-	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
-	Area: 1 for size: True
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square = Square(True)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
 
 	>>> my_square.size = "5 feet"
 	Traceback (most recent call last):
