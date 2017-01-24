@@ -1,0 +1,89 @@
+The ``Square`` module
+=====================
+
+
+Using ``Square`` class
+----------------------
+
+Import the ``Square`` class from the ``Square`` module
+
+       >>> Square = __import__('4-square').Square
+
+Test it
+--------
+
+	>>> my_square = Square(True)
+	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+	Area: 1 for size: True
+
+	>>> my_square = Square(89)
+	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+	Area: 7921 for size: 89
+
+	>>> my_square = Square()
+	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+	Area: 0 for size: 0
+
+	>>> my_square.size = 5
+	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+	Area: 25 for size: 5
+
+	>>> my_square.size = True
+	>>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+	Area: 1 for size: True
+
+	>>> my_square.size = "5 feet"
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square.size = (0, 0)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square.size = {4, 4}
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square.size = {"hello": 4}
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square.size = [2, 3, 4]
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square.size = 3.4
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square.size = -33
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+	>>> my_square = Square({9, 9})
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square = Square({"hello": 10})
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square = Square(None)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square = Square([2, 3, 4])
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square = Square((8, 9))
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square = Square(55.99)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+	>>> my_square = Square("Howdy")
+	Traceback (most recent call last):
+	TypeError: size must be an integer
