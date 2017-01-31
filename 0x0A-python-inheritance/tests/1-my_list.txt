@@ -1,0 +1,49 @@
+The ```My List``` module
+========================
+
+
+Using ```MyList```
+------------------
+
+Import the class ```MyList``` from the ```My List``` module
+       >>> MyList = __import__('1-my_list').MyList
+
+Now use it:
+-----------
+
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> print(my_list)
+	[1, 3, 5, 4, 2]
+
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+	>>> len(my_list)
+	5
+
+	>>> my_list + [4, 5, 6]
+	[1, 3, 5, 4, 2, 4, 5, 6]
+
+	>>> my_list = MyList()
+	>>> my_list.append("Hi")
+	>>> my_list *= 4
+	>>> print(my_list)
+	['Hi', 'Hi', 'Hi', 'Hi']
+
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> print(3 in my_list)
+	True
+
+	>>> print([x for x in my_list])
+	[1, 2, 3]
+
+	>>> print(my_list[-1:])
+	[3]
