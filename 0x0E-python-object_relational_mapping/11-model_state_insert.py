@@ -14,5 +14,6 @@ if __name__ == '__main__':
     session = session_fake()
     new_state = State(name="Louisiana")
     session.add(new_state)
+    session.commit()
     state_added = session.query(State).filter_by(name="Louisiana").first()
     print("{}".format(state_added.id))
