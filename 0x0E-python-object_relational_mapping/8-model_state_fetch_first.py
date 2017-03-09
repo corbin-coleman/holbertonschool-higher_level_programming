@@ -12,6 +12,8 @@ if __name__ == '__main__':
     Base.metadata.create_all(database)
     session_fake = sqlalchemy.orm.sessionmaker(bind=database)
     session = session_fake()
-    for element in session.query(State).order_by(State.id):
-        if element.id == 1:
-            print("{}: {}".format(element.id, element.name))
+    first_state = session.query(State).first()
+    if first_state:
+        print("{}: {}".format(first_state.id, first_state.name))
+    else:
+        print("Nothing")
