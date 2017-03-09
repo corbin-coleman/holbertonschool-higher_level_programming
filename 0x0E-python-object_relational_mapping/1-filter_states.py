@@ -9,6 +9,7 @@ if __name__ == '__main__':
         "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
     usa = commands.fetchall()
     for state in usa:
-        print(state)
+        if state[1][0] == 'N':
+            print(state)
     commands.close()
     the_usa.close()
