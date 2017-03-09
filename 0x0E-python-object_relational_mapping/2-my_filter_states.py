@@ -10,6 +10,7 @@ if __name__ == '__main__':
     commands.execute(select_command)
     usa = commands.fetchall()
     for state in usa:
-        print(state)
+        if state[1] == argv[4]:
+            print(state)
     commands.close()
     the_usa.close()
