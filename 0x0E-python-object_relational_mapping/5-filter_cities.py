@@ -9,13 +9,13 @@ if __name__ == '__main__':
     cities JOIN states ON cities.state_id = states.id\
     ORDER BY cities.id ASC")
     usa = commands.fetchall()
-    comma_print = 0;
+    comma_print = 0
     for state in usa:
         if state[2] == argv[4]:
             if comma_print > 0:
                 print(", ", end="")
             print("{:s}".format(state[1]), end="")
-            comma_print += 1;
+            comma_print += 1
     print("")
     commands.close()
     the_usa.close()
