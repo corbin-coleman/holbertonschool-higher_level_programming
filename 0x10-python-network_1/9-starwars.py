@@ -4,7 +4,8 @@ import sys
 
 
 if __name__ == '__main__':
-    req = requests.get('http://swapi.co/api/people/?search={}'.format(sys.argv[1]))
+    search = sys.argv[1]
+    req = requests.get('http://swapi.co/api/people/?search={}'.format(search))
     results = req.json()['results']
     print("Number of result: {}".format(req.json()['count']))
     for dics in results:
