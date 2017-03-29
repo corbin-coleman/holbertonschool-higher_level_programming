@@ -1,3 +1,3 @@
 #!/bin/bash
 # Send a DELETE request to URL
-curl -LX DELETE "$1"
+curl -LsX DELETE "$1"
