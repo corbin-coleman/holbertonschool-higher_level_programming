@@ -13,5 +13,5 @@ if (x) {
     }
   }
 } else {
-  console.log('Missing number of occurences');
+  console.log('Missing size');
 }
