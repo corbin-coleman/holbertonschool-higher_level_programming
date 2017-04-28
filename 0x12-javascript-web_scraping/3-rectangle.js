@@ -6,7 +6,7 @@ module.exports = {
       this.width = w;
       this.height = h;
     }
-    this.print = function print() {
+    this.print = function() {
       row = '';
       for (let i = 0; i < this.width; i++) {
         row = row.concat('X');
