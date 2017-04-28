@@ -6,14 +6,14 @@ module.exports = {
       this.width = w;
       this.height = h;
     }
-    this.print = function() {
-      row = '';
+    this.print = function () {
+      let row = '';
       for (let i = 0; i < this.width; i++) {
         row = row.concat('X');
       }
       for (let i = 0; i < this.height; i++) {
-	console.log(row);
+        console.log(row);
       }
-    }
+    };
   }
 };

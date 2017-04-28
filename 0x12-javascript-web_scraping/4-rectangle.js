@@ -6,23 +6,23 @@ module.exports = {
       this.width = w;
       this.height = h;
     }
-    this.print = function() {
-      row = '';
+    this.print = function () {
+      let row = '';
       for (let i = 0; i < this.width; i++) {
         row = row.concat('X');
       }
       for (let i = 0; i < this.height; i++) {
-	console.log(row);
+        console.log(row);
       }
-    }
-    this.rotate = function() {
-      tmp = this.height;
+    };
+    this.rotate = function () {
+      let tmp = this.height;
       this.height = this.width;
       this.width = tmp;
-    }
-    this.double = function() {
+    };
+    this.double = function () {
       this.height *= 2;
       this.width *= 2;
-    }
+    };
   }
 };
