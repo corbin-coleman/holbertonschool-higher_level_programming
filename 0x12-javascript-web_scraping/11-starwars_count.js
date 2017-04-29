@@ -4,6 +4,9 @@ const request = require('request');
 const baseURL = process.argv[2];
 
 request(baseURL, function (error, response, body) {
+  if (error) {
+    return console.log(error);
+  }
   let films = JSON.parse(body)['results'];
   let count = 0;
   for (let i = 0; i < films.length; i++) {
